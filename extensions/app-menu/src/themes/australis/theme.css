@@ -1,0 +1,24 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
+:root {
+	--dark-icon-opacity:	1;
+	--dark-icon-opacity-secondary:	1;
+	--dark-icon-opacity-disabled:	1;
+
+	--dark-icon-filter:	invert(1) brightness(0.4275);
+	--dark-icon-filter-secondary:	invert(1) brightness(0.2980);
+	--dark-icon-filter-disabled:	invert(1) brightness(0.7725);
+}
+
+/* System Icons */
+.eb-icon[data-icon="system-arrow-expand"] {
+	background: url("data:image/svg+xml;charset=utf-8;base64,\
+		PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL\
+		3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PS\
+		IxNiI+PHBhdGggZmlsbD0iIzAwMCIgZD0iTTEyIDhsLTUgNS0xLTE\
+		gNC00LTQtNCAxLTF6Ii8+PC9zdmc+");
+}

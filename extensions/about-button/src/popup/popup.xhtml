@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<!--
+Copyright (C) 2017 ExE Boss
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title data-i18n="browserAction_wildcard" data-i18n-substitution='["$protocol$"]'/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="/browser-style-supplement/extension-panels.css"/>
+		<link rel="stylesheet" type="text/css" href="popup.css"/>
+		<script type="application/javascript" defer="true" src="/vendor/hyperhtml/index.js"/>
+		<script type="application/javascript" defer="true" src="/shared.js"/>
+		<script type="application/javascript" defer="true" src="popup.js"/>
+	</head>
+	<body>
+		<!-- Debug button, visibility controlled by variable `isDebug` in `popup.js` -->
+		<header id="header"><button id="showDisabledButtons" data-i18n="popup_debugButton" data-i18n-substitution='["$protocol$"]' style="display: none;"/></header>
+
+		<!-- Content -->
+		<main id="main"/>
+
+		<!-- Footer -->
+		<div id="status-container" class="hidden">
+			<div id="status-separator" class="panel-section-separator"/>
+			<div id="status" class="panel-section panel-section-list"/>
+		</div>
+		<footer id="footer" class="panel-section panel-section-footer">
+			<div id="open-options" class="panel-section-footer-button" data-i18n="popup_openOptions"/>
+		</footer>
+	</body>
+</html>

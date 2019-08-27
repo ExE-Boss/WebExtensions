@@ -1,0 +1,15 @@
+[
+	{
+		"category": "general",
+		"priority": 1000,
+		"content": [
+			{"url": "about:blank",	"icon": "page-white",	"privileged": false},
+			{"url": "flags",	"icon": "wrench",	"privileged": false}
+		]
+	},
+	{
+		"category": "debug",
+		"priority": 500,
+		"content": []
+	}
+]

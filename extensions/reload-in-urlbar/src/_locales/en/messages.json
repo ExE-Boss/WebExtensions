@@ -1,0 +1,7 @@
+{
+	"extensionName":	{ "message":	"Reload button in Location bar"	},
+	"description":	{ "message":	"A WebExtension which adds the reload button to the Firefox Location bar."	},
+
+	"pageAction_reload":	{ "message":	"Reload"	},
+	"pageAction_stop":	{ "message":	"Stop"	}
+}

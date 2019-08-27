@@ -1,0 +1,44 @@
+{
+	"name": "@exe-boss/x.reload-in-urlbar",
+	"version": "0.1.3",
+	"author": "ExE Boss",
+	"license": "GPL-3.0",
+	"private": true,
+
+	"scripts": {
+		"build": "gulp build",
+		"dist": "gulp dist",
+		"lint": "gulp lint",
+		"run": "gulp run"
+	},
+
+	"homepage": "https://github.com/ExE-Boss/reload-in-urlbar#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/ExE-Boss/reload-in-urlbar.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ExE-Boss/reload-in-urlbar/issues"
+	},
+
+	"devDependencies": {
+		"@exe-boss/eslint-config": "0.1.x",
+		"@types/firefox-webext-browser": "*",
+		"@types/gulp": "*",
+		"@types/gulp-replace": "*",
+		"@types/node": "*",
+		"eslint": "^5.3.0",
+		"fs-extra": "^7.0.0",
+		"gulp": "^3.9.1",
+		"gulp-cli": "^2.0.1",
+		"gulp-eslint": "^5.0.0",
+		"gulp-json-editor": "^2.4.2",
+		"gulp-replace": "^1.0.0",
+		"merge-stream": "^1.0.1",
+		"stylelint": "^9.4.0",
+		"stylelint-config-recommended": "^2.1.0",
+		"viperhtml": "^2.16.0",
+		"web-ext": "^2.8.0",
+		"yargs": "^12.0.1"
+	}
+}

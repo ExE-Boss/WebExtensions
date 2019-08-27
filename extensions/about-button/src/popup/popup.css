@@ -1,0 +1,102 @@
+/*
+ * Copyright (C) 2017 ExE Boss
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/* +----------+ */
+/* | Elements | */
+/* +----------+ */
+
+html, body {
+	overflow-x:	hidden;
+	margin:	0px;
+}
+
+img {
+	pointer-events:	none;
+}
+
+body {
+	max-height:	600px;
+}
+
+button, #main .panel-list-item, #open-options {
+	text-align:	left;
+	white-space:	nowrap;
+}
+
+/* +---------+ */
+/* | Classes | */
+/* +---------+ */
+
+.icon {
+	width:	16px;
+	vertical-align: middle;
+	margin-right:	8px;
+}
+
+/* +-----+ */
+/* | IDs | */
+/* +-----+ */
+
+#showDisabledButtons {
+	display:	none;
+	text-align:	center;
+	height:	calc(100% + 8px);
+	overflow-x:	visible;
+	white-space:	pre-line;
+}
+
+#main {
+	overflow-y:	auto;
+	overflow-x:	hidden;
+}
+
+#main > .panel-section-header > .text-section-header {
+	flex-grow:	10;
+	text-align:	center;
+}
+
+#main > .panel-section-list {
+	margin-right:	16px;
+}
+
+#main > .panel-section-list > .panel-list-item {
+	width:	calc(100% + 16px) !important;
+}
+
+#footer {
+	overflow:	visible;
+}
+
+#open-options {
+	text-align:	center;
+	line-height:	16px;
+	height:	40px;
+}
+
+#status {
+	margin:	2px;
+	margin-bottom:	4px;
+	white-space:	normal;
+}
+
+.hidden {
+	display:	none;
+}
+
+#status > div {
+	padding:	0 16px;
+}

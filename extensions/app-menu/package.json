@@ -1,0 +1,45 @@
+{
+	"name": "@exe-boss/x.app-menu",
+	"version": "0.1.8",
+	"author": "ExE Boss",
+	"scripts": {
+		"build": "gulp build",
+		"dist": "gulp dist",
+		"lint": "gulp lint",
+		"run": "gulp run"
+	},
+	"types": "src/types.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/ExE-Boss/app-menu.git"
+	},
+	"private": true,
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/ExE-Boss/app-menu/issues"
+	},
+	"homepage": "https://github.com/ExE-Boss/app-menu#readme",
+	"devDependencies": {
+		"@exe-boss/eslint-config": "0.1.x",
+		"@types/firefox-webext-browser": "*",
+		"@types/gulp": "*",
+		"@types/gulp-replace": "*",
+		"@types/node": "*",
+		"eslint": "^5.3.0",
+		"fs-extra": "^7.0.0",
+		"gulp": "^3.9.1",
+		"gulp-cli": "^2.0.1",
+		"gulp-eslint": "^5.0.0",
+		"gulp-json-editor": "^2.4.2",
+		"gulp-replace": "^1.0.0",
+		"hyperhtml": "^2.13.0",
+		"merge-stream": "^1.0.1",
+		"stylelint": "^9.4.0",
+		"stylelint-config-recommended": "^2.1.0",
+		"web-ext": "^2.8.0",
+		"yargs": "^12.0.1"
+	},
+	"resolutions": {
+		"addons-linter": "^1.3.0"
+	}
+}

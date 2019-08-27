@@ -1,0 +1,24 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
+:root {
+	--dark-icon-opacity-disabled: .58;
+}
+
+#sub-menu {
+	background-color: #EDEDF0;
+}
+
+/* System Icons */
+.eb-icon[data-icon="system-arrow-expand"] {
+	background: url("data:image/svg+xml;charset=utf-8;base64,\
+		PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciI\
+		HZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggZmlsbD0iY29udGV4dC\
+		1maWxsIiBkPSJNNiAxNGExIDEgMCAwIDEtLjcwNy0xLjcwN0w5LjU\
+		4NiA4IDUuMjkzIDMuNzA3YTEgMSAwIDAgMSAxLjQxNC0xLjQxNGw1\
+		IDVhMSAxIDAgMCAxIDAgMS40MTRsLTUgNUExIDEgMCAwIDEgNiAxN\
+		HoiLz48L3N2Zz4=");
+}

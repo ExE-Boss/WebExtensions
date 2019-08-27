@@ -1,0 +1,37 @@
+# Configuration
+env:
+    global:
+        secure: "cR5sp5hks0AxR5lYu5W5P/dckJ9wr90055FaEgiCBBJq3Ueqf0jXaYg+ihsCM1Sq3AkE3PUKIdk6792IP6/sw81tJBswHosWlNA5YGpJWDzuCMgvq82QQGvzMFWeMJqX/O9ePEqPqZ0/twgFkQJ8ALrYFqQieLnPe7Nsv02jEwxtflT19dqvBNxi12NnB3JyMAdZ1j5450HAJVKVA9GdChEAa9nSe00xIqMLzeiJsF1tFrSyL1+7ZGBiXbrsRDBDKphKHvWCcL+i56FwxF39SqNjP9dKDe7IAZIfIr1815dkfbUtCNitAY4Rj52J6SjVlhg1EKshbcwOViHeAQKxFXJ4A5Bm7k5n1T99BFTzFzqfplCmnd+v3wcZClHOlqgzSDChUK7eXc3M+I3hcKd9XpGWDTShDKoa7JcvGqEuyj6Ak7NMXi+GSp7keuKA/DoPEWBgR0hvua8MFAQLoEaG5aXqhFRRODfbR7jdmqZYvLuIPMlzRV2NjslPZeuvETb3w0l6hANrTmHkUfXBmqCpcYg2VRM4EfS6/S5cf6JIoy73LI86p/yypDYsP1sLlXxs9icCmeh4Y7O0Bn9bS2oPKI9YprXToLpguuU+TWS+EsJqtM+pkCkrwQS4AqN3RD/74mHW7DuCnH0CjYLN6QARso9BwOoaZgOKd4vpcdZIREk="
+sudo: false
+language: node_js
+
+node_js:
+    - "stable"
+
+# The pre-install script
+before_install:
+    - npm i -g greenkeeper-lockfile@1
+
+# The install script
+install:
+    - yarn install
+
+# The pre-build script
+before_script:
+    - greenkeeper-lockfile-update || true
+    - yarn run lint
+
+# The build script
+script:
+    - yarn run build
+
+# The post-build script
+after_script:
+    - greenkeeper-lockfile-upload || true
+
+# Disable email notifications
+notifications:
+    email: false
+
+# WHO IN THE F# (the programming language) DOESN’T SUPPORT TABS IN 2017? '	' <- tab
+# P.S.: F# (the programming language) also doesn’t support tabs, and that's terrible

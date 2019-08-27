@@ -1,0 +1,90 @@
+{
+	"extensionName":	{ "message":	"about:about Button"	},
+	"extensionName_chrome":	{ "message":	"chrome://about Button"	},
+	"extensionName_opera":	{ "message":	"opera://about Button"	},
+	"extensionName_wildcard": {
+		"message":	"$protocol$about Button",
+		"placeholders":	{ "protocol": { "content" : "$1" }}
+	},
+
+	"description":	{ "message":	"A WebExtension to quickly open about:* pages."	},
+	"description_chrome":	{ "message":	"A WebExtension to quickly open chrome://* pages."	},
+	"description_opera":	{ "message":	"A WebExtension to quickly open opera://* pages."	},
+
+	"browserAction":	{ "message":	"about:about"	},
+	"browserAction_chrome":	{ "message":	"chrome://about"	},
+	"browserAction_opera":	{ "message":	"opera://about"	},
+	"browserAction_wildcard": {
+		"message":	"$protocol$about",
+		"placeholders":	{ "protocol": { "content" : "$1" }}
+	},
+
+	"popup_openOptions":	{ "message":	"Open Extension Options"	},
+	"popup_privilegedHidden":	{ "message":	"Privileged pages have been hidden"	},
+	"popup_unsupported_unknown": {
+		"message":	"No known $protocol$ pages found",
+		"placeholders":	{ "protocol": { "content" : "$1" }}
+	},
+	"popup_unsupported_privilegedOnly": {
+		"message":	"No unprivileged $protocol$ pages found",
+		"placeholders":	{ "protocol": { "content" : "$1" }}
+	},
+	"popup_debugButton": {
+		"message":	"Toggle privileged\n$protocol$ pages visibility",
+		"placeholders":	{ "protocol": { "content" : "$1" }}
+	},
+	"popup_tooltip_aliases":	{ "message":	"Aliases:"	},
+	"popup_tooltip_hasQuery":	{ "message":	"Page has alternate options in the context menu."	},
+
+	"category_general":	{ "message":	"General"	},
+	"category_debug":	{ "message":	"Debugging"	},
+
+	"options_options": {
+		"message":	"$protocol$about Button Options",
+		"placeholders":	{ "protocol": { "content" : "$1" }}
+	},
+	"options_header":	{ "message":	"Options"	},
+	"options_showDisabledButtons":	{ "message":	"Show privileged pages\n(currently can’t be opened from the menu)"	},
+
+	"page_firefox_":	{ "message":	"Displays version and build information and links to the contributors, licensing information and build configurtion."	},
+	"page_firefox_about":	{ "message":	"Provides an overview of all about: pages available for your current Firefox version."	},
+	"page_firefox_accounts":	{ "message":	"Page used by the Sync feature."	},
+	"page_firefox_addons":	{ "message":	"Add-ons Manager"	},
+	"page_firefox_about@x3Ablank":	{ "message":	"Shows a blank document."	},
+	"page_firefox_buildconfig":	{ "message":	"Displays the configuration and platform used to build Firefox."	},
+	"page_firefox_cache":	{ "message":	"Displays information about the memory, disk, and appcache."	},
+	"page_firefox_cache_storage_disk":	{ "message":	"Disk Cache"	},
+	"page_firefox_cache_storage_memory":	{ "message":	"Memory Cache"	},
+	"page_firefox_cache_storage_appcache":	{ "message":	"Application Cache"	},
+	"page_firefox_checkerboard":	{ "message":	"Switches to the checkerboarding measurement page, which allows to detect checkerboarding issues."	},
+	"page_firefox_config":	{ "message":	"Provides a way to inspect and change Firefox preferences and settings."	},
+	"page_firefox_credits":	{ "message":	"Lists all contributors to the Firefox project."	},
+	"page_firefox_crashes":	{ "message":	"Lists all crashes, which happened during the runtime of Firefox (in case the user enabled the crash reporter)."	},
+	"page_firefox_customizing":	{ "message":	"Switches to the customization page, which allows to customize Firefox' UI."	},
+	"page_firefox_debugging":	{ "message":	"Switches to the Developer Tools debugging page, which allows you to debug add-ons, tabs and Service Workers."	},
+	"page_firefox_devtools@x2Dtoolbox":	{ "message":	"Shows the content of the devtools."	},
+	"page_firefox_downloads":	{ "message":	"Displays all downloads done within Firefox."	},
+	"page_firefox_healthreport":	{ "message":	"Displays performance information of Firefox (in case the user enabled the health report)."	},
+	"page_firefox_home":	{ "message":	"Start page of Firefox when opening a new window."	},
+	"page_firefox_license":	{ "message":	"Displays licensing information."	},
+	"page_firefox_logo":	{ "message":	"Firefox logo"	},
+	"page_firefox_memory":	{ "message":	"Provides a way to display memory usage, save it as report and run the GC and CC."	},
+	"page_firefox_mozilla":	{ "message":	"Special page showing a message from The Book of Mozilla."	},
+	"page_firefox_networking":	{ "message":	"Displays networking information."	},
+	"page_firefox_newtab":	{ "message":	"Start page when opening a new tab."	},
+	"page_firefox_performance":	{ "message":	"Displays memory and performance information about Firefox subprocesses/add-ons/tabs."	},
+	"page_firefox_plugins":	{ "message":	"Displays information about installed plugins."	},
+	"page_firefox_preferences":	{ "message":	"Firefox settings"	},
+	"page_firefox_privatebrowsing":	{ "message":	"Start page when opening a private window."	},
+	"page_firefox_profiles":	{ "message":	"Display and manage Firefox profiles."	},
+	"page_firefox_rights":	{ "message":	"Displays rights information."	},
+	"page_firefox_robots":	{ "message":	"Special page showing notes about robots."	},
+	"page_firefox_serviceworkers":	{ "message":	"Displays currently running Service Workers."	},
+	"page_firefox_sessionrestore":	{ "message":	"Session restoration (displayed after a Firefox crash)"	},
+	"page_firefox_support":	{ "message":	"Troubleshooting information"	},
+	"page_firefox_sync@x2Dlog":	{ "message":	"Displays a synchronization protocol related to the Sync feature."	},
+	"page_firefox_sync@x2Dtabs":	{ "message":	"Lists tabs available for synchronization related to the Sync feature."	},
+	"page_firefox_telemetry":	{ "message":	"Displays telemetry data collected and sent to Mozilla while Firefox is running (in case the user enabled telemetry)."	},
+	"page_firefox_webrtc":	{ "message":	"Information about WebRTC usage"	},
+	"page_firefox_welcomeback":	{ "message":	"Information page displayed after Firefox is reset."	}
+}

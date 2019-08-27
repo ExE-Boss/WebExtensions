@@ -1,0 +1,15 @@
+{
+	"name": "__MSG_theme_pastelSVG__",
+	"default_extension": "png",
+	"browser_action": {
+		"16":	"firefox@16px.png",
+		"24":	"firefox@24px.png",
+		"32":	"firefox@32px.png",
+		"48":	"firefox@48px.png",
+		"64":	"firefox@64px.png",
+		"72":	"firefox@72px.png",
+		"96":	"firefox@96px.png",
+		"128":	"firefox@128px.png",
+		"256":	"firefox.png"
+	}
+}

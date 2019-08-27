@@ -1,0 +1,203 @@
+/*
+ * Copyright (C) 2017 ExE Boss
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+:root {
+	--dark-icon-opacity:	1;
+	--dark-icon-opacity-secondary:	1;
+	--dark-icon-opacity-disabled:	.5;
+
+	--dark-icon-filter:	unset;
+	--dark-icon-filter-secondary:	unset;
+	--dark-icon-filter-disabled:	unset;
+}
+
+html, body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.sub-menu {
+	display:	contents;
+	flex-grow:	1;
+}
+
+#sub-menu > *,
+#sub-sub-menu > * {
+	background-clip: padding-box;
+	border-left:	1px solid rgba(24,26,27,.2);
+}
+
+#sub-menu > * {
+	background:	rgba(0, 0, 0, 0.06);
+	min-width:	300px;
+}
+
+#sub-sub-menu > * {
+	background:	rgba(0, 0, 0, 0.12);
+	min-width:	240px;
+}
+
+.sub-menu > *:not(.active):not(.panel-section-padding) {
+	display:	none;
+}
+
+menu[type="context"] {
+	display:	none;
+}
+
+/* Icons */
+.eb-icon-placeholder,
+.eb-icon {
+	width:	16px;
+	min-width:	16px;
+	max-width:	16px;
+
+	height:	16px;
+	min-height:	16px;
+	max-height:	16px;
+
+	vertical-align:	middle;
+}
+
+.panel-list-item.text > .eb-icon-placeholder,
+.panel-list-item.text > .eb-icon,
+.eb-icon-placeholder:not(:last-child),
+.eb-icon:not(:last-child) {
+	margin-right:	8px;
+}
+
+.context-properties-fill {
+	-moz-context-properties: fill;
+}
+
+/* Icon Colours */
+img.icon,
+.eb-icon[data-icon^="system-"] {
+	filter: var(--dark-icon-filter);
+	opacity: var(--dark-icon-opacity);
+}
+
+.sub-menu img.icon,
+.sub-menu .eb-icon[data-icon^="system-"],
+img.icon.sub-menu,
+.eb-icon[data-icon^="system-"].sub-menu {
+	filter: var(--dark-icon-filter-secondary);
+	opacity: var(--dark-icon-opacity-secondary);
+}
+
+.sub-menu img.icon:hover,
+.sub-menu .eb-icon[data-icon^="system-"]:hover,
+.sub-menu *:hover > img.icon,
+.sub-menu *:hover > .eb-icon[data-icon^="system-"],
+.sub-menu:hover > img.icon,
+.sub-menu:hover > .eb-icon[data-icon^="system-"],
+img.icon.sub-menu:hover,
+.eb-icon[data-icon^="system-"].sub-menu:hover {
+	filter: var(--dark-icon-filter);
+	opacity: var(--dark-icon-opacity);
+}
+
+.disabled img.icon,
+.disabled .eb-icon[data-icon^="system-"],
+img.icon.disabled,
+.eb-icon[data-icon^="system-"].disabled {
+	filter: var(--dark-icon-filter-disabled) !important;
+	opacity: var(--dark-icon-opacity-disabled) !important;
+}
+
+/* System Icons */
+.eb-icon[data-icon="system-arrow-expand"] {
+	background: url("data:image/svg+xml;charset=utf-8;base64,\
+		PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL\
+		3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PS\
+		IxNiI+PHBhdGggZmlsbD0iIzZhNmE2YSIgZD0iTTEyIDhsLTUgNS0\
+		xLTEgNC00LTQtNCAxLTF6Ii8+PC9zdmc+");
+}
+
+/* Custom Panel Extensions */
+.panel-section-padding {
+	flex-grow:	10;
+}
+
+.panel-section-list > .panel-section-padding:first-child {
+	margin-top:	-16px;
+}
+
+.panel-section-list > .panel-section-padding:last-child {
+	margin-bottom:	-16px;
+}
+
+.panel-list-item .text {
+	white-space:	nowrap;
+}
+
+.panel-section > .text {
+	align-items: center;
+	display:	flex;
+	padding:	0 16px;
+	flex-grow:	10;
+}
+
+.panel-section > .text:first-child {
+	margin-left:	24px;
+}
+
+.panel-section:not(.panel-section-list) > .panel-list-item.icon {
+	flex-grow:	0;
+	flex-shrink:	0;
+	padding:	0;
+}
+
+.panel-section:not(.panel-section-list) > .panel-list-item.icon {
+	width:	24px;
+}
+
+.panel-section:not(.panel-section-list) > .panel-list-item.icon:not(:first-child):first-of-type {
+	margin-left: auto;
+}
+
+.panel-section:not(.panel-section-list) > .panel-list-item.icon:first-child {
+	padding-left:	16px;
+	width:	36px;
+}
+
+.panel-section:not(.panel-section-list) > .panel-list-item.icon:not(:first-child):not(.disabled):hover {
+	border-left:	1px solid rgba(0, 0, 0, 0.1);
+}
+
+.panel-section:not(.panel-section-list) > .panel-list-item.icon:last-child {
+	padding-right:	16px;
+	width:	36px;
+}
+
+.panel-section:not(.panel-section-list) > .panel-list-item.icon:not(:last-child):not(.disabled):hover {
+	border-right:	1px solid rgba(0, 0, 0, 0.1);
+}
+
+.panel-list-item.icon:not(:last-child) > .eb-icon-placeholder,
+.panel-list-item.icon:not(:last-child) > .icon {
+	margin-right:	auto;
+}
+
+.panel-list-item.icon:not(:first-child) > .eb-icon-placeholder,
+.panel-list-item.icon:not(:first-child) > .icon {
+	margin-left:	auto;
+}
+
+.text-shortcut:not(:first-child) {
+	margin-left:	4px;
+}
