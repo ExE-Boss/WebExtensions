@@ -20,8 +20,6 @@
 !/gulpfile*
 !/package*
 !/pnpm*
-!/shrinkwrap*
-!/yarn*
 !/.*ignore
 /**/node_modules
 
