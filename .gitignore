@@ -10,10 +10,14 @@
 !/.gitattributes
 !/.gitignore
 !/.gitmodules
-!/README*
+
+## GitHub
+!/.github
 !/LICENSE*
+!/README*
 
 ## npm
+!/.*rc
 !/.*rc.js
 !/.*rc.yml
 !/.*rc.json
@@ -21,7 +25,11 @@
 !/package*
 !/pnpm*
 !/.*ignore
-/**/node_modules
+!/.*config
+
+### Ignore `node_modules`:
+/**/node_modules/**
+/node_modules/**
 
 ## Travis CI
 !/.travis.yml
