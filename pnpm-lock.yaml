@@ -2,9 +2,11 @@ importers:
   .:
     devDependencies:
       '@exe-boss/eslint-config': 0.1.3_eslint@5.16.0
+      '@exe-boss/renovate-config': 0.1.0
       eslint: 5.16.0
     specifiers:
       '@exe-boss/eslint-config': 0.1.3
+      '@exe-boss/renovate-config': ^0.1.0
       eslint: ^5.13.0
   extensions/about-button:
     devDependencies:
@@ -283,6 +285,10 @@ packages:
       eslint: '>= 4'
     resolution:
       integrity: sha512-G45S+9fpsRSUwWQ3uq/+UVl68zVxpvNxA6CvUFV+zlBpt6JW/1Zny2CWavGRsAPkgQEAQ3NuE+IYj1Nfm4O+Dg==
+  /@exe-boss/renovate-config/0.1.0:
+    dev: true
+    resolution:
+      integrity: sha512-Te7yn3MaqsEylBgqn47r+JeltUHzYRdzYDgFBepyAZeVnsnr5QXrQ54NRB8uz7y58Q4raeFPZlR2fmb0WUfX6Q==
   /@mrmlnc/readdir-enhanced/2.2.1:
     dependencies:
       call-me-maybe: 1.0.1
